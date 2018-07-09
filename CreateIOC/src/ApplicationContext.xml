@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="address" class="com.myspring.bean.Address">
+        <property name="city" value="fuzhou"></property>
+    </bean>
+   <!-- 
+    <bean id="address" class="com.myspring.bean.Address">
+        <property name="city" value="fujian"></property>
+    </bean>
+     --> 
+    
+    <bean id="user" class="com.myspring.bean.User">
+        <property name="userName" value="tom"></property>
+        <property name="address" ref="address"></property>
+    </bean>
+</beans>
